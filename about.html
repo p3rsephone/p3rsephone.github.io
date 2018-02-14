@@ -7,20 +7,37 @@ header-img: "img/about-bg.jpg"
 
 <!-- Language Selector -->
 <select onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
-    <option value="0" selected> Português </option>
-    <option value="1"> 英语 English </option>
+    <option value="0" selected> English </option>
+    <option value="1"> Português </option>
 </select>
 
 <!-- Portuguese Version -->
 <div class="pt post-container">
     <blockquote>
-        ESCREVE COISAS
-        AQUI
+        À ESPERA DA SEGUNDA TEMPORADA DE GEEKS AND FREAKS DESDE 2000
     </blockquote>
-    BLABLABLABLA eu sou portuguesa.
+    <p>
+        Eu tenho 20 anos e estou atualmente a estudar Engenharia Informática. Estou no terceiro ano do Mestrado Integrado (quase lá!) e planeio centrar a minha educação em Cibersegurança aprendendo tudo o que puder entretanto.
+    </p>
 
-    <p style="text-align:right;">
-        —— <a href="http://www.ptihu.com/question/19687065">HEY</a>
+    <p>
+        Eu adoro escrever e viajar (e escrever sobre viajar) e é mais provável encontrarem-me no Reddit do que no Facebook.
+    </p>
+
+    <p>
+        <a href="https://p3rsephone.github.io/books">Isto é o que estou a ler.</a>
+    </p>
+
+    <p>
+        <a href="https://open.spotify.com/user/trexabreaksfree?si=0bjJStwpQdS6kzYN-_BbJA">Isto é o que estou a ouvir.</a>
+    </p>
+
+    <p>
+        Podem encontrar o meu CV <a href="https://p3rsephone.github.io/resume">aqui</a> e sintam-se à vontade para me contactar!
+    </p>
+
+    <p>
+        <>
     </p>
 
 </div>
@@ -28,20 +45,31 @@ header-img: "img/about-bg.jpg"
 <!-- English Version -->
 <div class="en post-container">
     <blockquote>
-        ENGLISH HERE
-        I GUESS
+        WAITING FOR GEEKS AND FREAKS S2 SINCE 2000
     </blockquote>
 
     <p>
-        Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do. If you haven’t found it yet, keep looking. Don’t settle. As with all matters of the heart, you’ll know when you find it.
+        I’m 20 years old and currently studying Informatics Engineering. I am now on my 3rd year of Integrated Masters (half-way there!) and I plan to center my education in Infosec, learning everything I can along the way.
     </p>
 
     <p>
-    If you want to live your life in a creative way, as an artist, you have to not look back too much. You have to be willing to take whatever you’ve done and whoever you were and throw them away.
+        I absolutely love to write and to travel (and write about traveling), and you’re more likely to find me on Reddit than on Facebook.
     </p>
 
-    <p style="text-align:right;">
-    -- Steve Jobs
+    <p>
+        <a href="https://p3rsephone.github.io/books">Check out what I'm reading.</a>
+    </p>
+
+    <p>
+        <a href="https://open.spotify.com/user/trexabreaksfree?si=0bjJStwpQdS6kzYN-_BbJA">This is what I'm listening to.</a>
+    </p>
+
+    <p>
+        You can find my resume <a href="https://p3rsephone.github.io/resume">here</a> and feel free to contact me!
+    </p>
+
+    <p>
+        <>
     </p>
 
 </div>
@@ -51,7 +79,7 @@ header-img: "img/about-bg.jpg"
     var $pt = document.querySelector(".pt");
     var $en = document.querySelector(".en");
     function onLanChange(index){
-        if(index == 0){
+        if(index == 1){
             $pt.style.display = "block";
             $en.style.display = "none";
         }else{
