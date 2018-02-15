@@ -13,7 +13,7 @@ header-img: "img/books-bg.jpg"
 * The Sun and Her Flowers
 
 ## Already read
-* Mild and Honey
+* Milk and Honey
 * Harry Potter and the Cursed Child
 * The Name of the Wind
 * Ready Player One
