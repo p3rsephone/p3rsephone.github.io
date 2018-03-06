@@ -79,10 +79,10 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 
 
 # Friends
-#friends: [
-#    {
-#        title: "Hux Blog",
-#        href: "http://huangxuan.me"
+friends: [
+    {
+        title: "RabbitHole",
+        href: "https://jhugobb.github.io/"
 #    },{
 #        title: "Foo",
 #        href: "#"
@@ -95,5 +95,5 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 #    },{
 #        title: "It helps SEO",
 #        href: "#"
-#    }
-#]
+    }
+]
