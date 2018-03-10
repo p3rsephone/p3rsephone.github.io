@@ -5,8 +5,8 @@
     <description>Red Bull fuelled thoughts</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 14 Feb 2018 22:24:11 +0000</pubDate>
-    <lastBuildDate>Wed, 14 Feb 2018 22:24:11 +0000</lastBuildDate>
+    <pubDate>Sat, 10 Mar 2018 17:08:41 +0000</pubDate>
+    <lastBuildDate>Sat, 10 Mar 2018 17:08:41 +0000</lastBuildDate>
     <generator>Jekyll v3.7.2</generator>
     
       <item>
@@ -68,8 +68,8 @@ Feel free to use &lt;em&gt;“I was late and didn’t have time to buy a ticket�
 &lt;p&gt;You should know that riding without a ticket is probably illegal (it is in Portugal but check the laws in your country) and in all of these experiences I actually purchased my ticket.&lt;/p&gt;
 </description>
         <pubDate>Wed, 06 Sep 2017 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2017/09/06/train-social-engineering/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/09/06/train-social-engineering/</guid>
+        <link>http://localhost:4000/2017/09/06/train-social/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/09/06/train-social/</guid>
         
         <category>Social Engineering</category>
         

@@ -1,8 +1,7 @@
 ---
 title: Tags
 layout: default
-description: keep hungry keep foolish
-header-img: "img/tag-bg.jpg"
+header-img: "assets/img/tag-bg.jpg"
 ---
 
 <!-- Page Header -->
@@ -12,7 +11,6 @@ header-img: "img/tag-bg.jpg"
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="site-heading" id="tag-heading">
                     <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
-                    <span class="subheading">{{ page.description }}</span>
                 </div>
             </div>
         </div>
@@ -23,24 +21,20 @@ header-img: "img/tag-bg.jpg"
 <div class="container">
 	<div class="row">
 		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <!-- 标签云 -->
+            <!-- Tag circles -->
 			<div id='tag_cloud' class="tags">
 				{% for tag in site.tags %}
 				<a href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
 				{% endfor %}
 			</div>
 
-            <!-- 标签列表 -->
+            <!-- Tags -->
 			{% for tag in site.tags %}
 			<div class="one-tag-list">
 			  	<span class="fa fa-tag listing-seperator" id="{{ tag[0] }}">
                     <span class="tag-text">{{ tag[0] }}</span>
                 </span>
 				{% for post in tag[1] %}
-				  <!-- <li class="listing-item">
-				  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-				  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-				  </li> -->
 				 <div class="post-preview">
 				    <a href="{{ post.url | prepend: site.baseurl }}">
 				        <h2 class="post-title">
@@ -48,11 +42,10 @@ header-img: "img/tag-bg.jpg"
 				        </h2>
 				        {% if post.subtitle %}
 				        <h3 class="post-subtitle">
-				            {{ post.subtitle }}
+				            {{ post.date | date:"%d-%m-%Y" }}
 				        </h3>
 				        {% endif %}
 				    </a>
-				    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
 				</div>
 				<hr>
 				{% endfor %}

@@ -1,7 +1,7 @@
 ---
 layout:     books
 title:      "Read List"
-header-img: "img/books-bg.jpg"
+header-img: "assets/img/books-bg.jpg"
 ---
 
 ## Reading right know

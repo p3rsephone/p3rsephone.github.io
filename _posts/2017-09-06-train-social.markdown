@@ -4,7 +4,7 @@ title:      "Train Social Engineering"
 subtitle:   "Trains gone wrong"
 date:       2017-09-06
 author:     "Persephone"
-header-img: "img/post-bg-2015.jpg"
+header-img: "assets/img/post-bg-train.jpg"
 tags:
     - Social Engineering
     - Portugal

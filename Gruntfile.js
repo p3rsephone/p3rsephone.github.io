@@ -5,26 +5,26 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
         uglify: {
             main: {
-                src: 'js/<%= pkg.name %>.js',
-                dest: 'js/<%= pkg.name %>.min.js'
+                src: 'assets/js/<%= pkg.name %>.js',
+                dest: 'assets/js/<%= pkg.name %>.min.js'
             }
         },
         less: {
             expanded: {
                 options: {
-                    paths: ["css"]
+                    paths: ["assets/css"]
                 },
                 files: {
-                    "css/<%= pkg.name %>.css": "less/<%= pkg.name %>.less"
+                    "assets/css/<%= pkg.name %>.css": "assets/less/<%= pkg.name %>.less"
                 }
             },
             minified: {
                 options: {
-                    paths: ["css"],
+                    paths: ["assets/css"],
                     cleancss: true
                 },
                 files: {
-                    "css/<%= pkg.name %>.min.css": "less/<%= pkg.name %>.less"
+                    "assets/css/<%= pkg.name %>.min.css": "assets/less/<%= pkg.name %>.less"
                 }
             }
         },
@@ -39,20 +39,20 @@ module.exports = function(grunt) {
                     banner: '<%= banner %>'
                 },
                 files: {
-                    src: ['css/<%= pkg.name %>.css', 'css/<%= pkg.name %>.min.css', 'js/<%= pkg.name %>.min.js']
+                    src: ['assets/css/<%= pkg.name %>.css', 'assets/css/<%= pkg.name %>.min.css', 'assets/js/<%= pkg.name %>.min.js']
                 }
             }
         },
         watch: {
             scripts: {
-                files: ['js/<%= pkg.name %>.js'],
+                files: ['assets/js/<%= pkg.name %>.js'],
                 tasks: ['uglify'],
                 options: {
                     spawn: false,
                 },
             },
             less: {
-                files: ['less/*.less'],
+                files: ['assets/less/*.less'],
                 tasks: ['less'],
                 options: {
                     spawn: false,

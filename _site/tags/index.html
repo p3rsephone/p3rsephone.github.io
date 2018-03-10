@@ -15,16 +15,16 @@
     <link rel="canonical" href="http://localhost:4000/tags/">
 
     <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/hux-blog.min.css">
+    <link rel="stylesheet" href="/assets/css/hux-blog.min.css">
 
     <!-- Pygments Github CSS -->
-    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="stylesheet" href="/assets/css/syntax.css">
 
     <!-- Custom Fonts -->
-    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
     <!-- Hux change font-awesome CDN to qiniu -->
     <link href="http://cdn.staticfile.org/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
@@ -74,9 +74,6 @@
         <div id="huxblog_navbar">
             <div class="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="/">Home</a>
-                    </li>
                     
                     <li>
                         <a href="/about/">Whoami</a>
@@ -131,13 +128,12 @@
 
 
     <!-- Page Header -->
-<header class="intro-header" style="background-image: url('/img/tag-bg.jpg')">
+<header class="intro-header" style="background-image: url('/assets/img/tag-bg.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="site-heading" id="tag-heading">
                     <h1>Tags</h1>
-                    <span class="subheading">keep hungry keep foolish</span>
                 </div>
             </div>
         </div>
@@ -148,7 +144,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <!-- 标签云 -->
+            <!-- Tag circles -->
 			<div id='tag_cloud' class="tags">
 				
 				<a href="#Social Engineering" title="Social Engineering" rel="1">Social Engineering</a>
@@ -159,29 +155,24 @@
 				
 			</div>
 
-            <!-- 标签列表 -->
+            <!-- Tags -->
 			
 			<div class="one-tag-list">
 			  	<span class="fa fa-tag listing-seperator" id="Social Engineering">
                     <span class="tag-text">Social Engineering</span>
                 </span>
 				
-				  <!-- <li class="listing-item">
-				  <time datetime="2017-09-06">2017-09-06</time>
-				  <a href="/2017/09/06/train-social-engineering/" title="Train Social Engineering">Train Social Engineering</a>
-				  </li> -->
 				 <div class="post-preview">
-				    <a href="/2017/09/06/train-social-engineering/">
+				    <a href="/2017/09/06/train-social/">
 				        <h2 class="post-title">
                             Train Social Engineering
 				        </h2>
 				        
 				        <h3 class="post-subtitle">
-				            Trains gone wrong
+				            06-09-2017
 				        </h3>
 				        
 				    </a>
-				    <!-- <p class="post-meta">2017-09-06</p> -->
 				</div>
 				<hr>
 				
@@ -192,22 +183,17 @@
                     <span class="tag-text">Portugal</span>
                 </span>
 				
-				  <!-- <li class="listing-item">
-				  <time datetime="2017-09-06">2017-09-06</time>
-				  <a href="/2017/09/06/train-social-engineering/" title="Train Social Engineering">Train Social Engineering</a>
-				  </li> -->
 				 <div class="post-preview">
-				    <a href="/2017/09/06/train-social-engineering/">
+				    <a href="/2017/09/06/train-social/">
 				        <h2 class="post-title">
                             Train Social Engineering
 				        </h2>
 				        
 				        <h3 class="post-subtitle">
-				            Trains gone wrong
+				            06-09-2017
 				        </h3>
 				        
 				    </a>
-				    <!-- <p class="post-meta">2017-09-06</p> -->
 				</div>
 				<hr>
 				
@@ -218,22 +204,17 @@
                     <span class="tag-text">SE</span>
                 </span>
 				
-				  <!-- <li class="listing-item">
-				  <time datetime="2017-09-06">2017-09-06</time>
-				  <a href="/2017/09/06/train-social-engineering/" title="Train Social Engineering">Train Social Engineering</a>
-				  </li> -->
 				 <div class="post-preview">
-				    <a href="/2017/09/06/train-social-engineering/">
+				    <a href="/2017/09/06/train-social/">
 				        <h2 class="post-title">
                             Train Social Engineering
 				        </h2>
 				        
 				        <h3 class="post-subtitle">
-				            Trains gone wrong
+				            06-09-2017
 				        </h3>
 				        
 				    </a>
-				    <!-- <p class="post-meta">2017-09-06</p> -->
 				</div>
 				<hr>
 				
@@ -252,6 +233,15 @@
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <ul class="list-inline text-center">
                     
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
                     
                     <li>
                         <a href="https://twitter.com/p3rsephone">
@@ -263,7 +253,6 @@
                     </li>
                     
 
-                    <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
                     
                     <li>
                         <a target="_blank" href="https://www.reddit.com/user/tdosilva">
@@ -275,16 +264,6 @@
                     </li>
                     
 
-                    
-                    <li>
-                        <a target="_blank" href="https://www.facebook.com/tdosilva">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
                     
                     <li>
                         <a target="_blank" href="https://github.com/p3rsephone">
@@ -299,7 +278,7 @@
                 <p class="copyright text-muted">
                     Copyright &copy; Chaotic Neutral 2018
                     <br>
-                    Theme by <a href="http://huangxuan.me">Hux</a> |
+                    Theme by <a href="https://github.com/p3rsephone">P3rsephone</a> |
                     <iframe
                         style="margin-left: 2px; margin-bottom:-5px;"
                         frameborder="0" scrolling="0" width="91px" height="20px"
@@ -312,13 +291,13 @@
 </footer>
 
 <!-- jQuery -->
-<script src="/js/jquery.min.js "></script>
+<script src="/assets/js/jquery.min.js "></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src="/js/bootstrap.min.js "></script>
+<script src="/assets/js/bootstrap.min.js "></script>
 
 <!-- Custom Theme JavaScript -->
-<script src="/js/hux-blog.min.js "></script>
+<script src="/assets/js/hux-blog.min.js "></script>
 
 
 <!-- async load function -->
@@ -337,7 +316,7 @@
      Because of the native support for backtick-style fenced code blocks
      right within the Markdown is landed in Github Pages,
      From V1.6, There is no need for Highlight.js,
-     so Huxblog drops it officially.
+     so I drop it officially.
 
      - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
      - https://help.github.com/articles/creating-and-highlighting-code-blocks/
@@ -356,7 +335,7 @@
 <script>
     // only load tagcloud.js in tag.html
     if($('#tag_cloud').length !== 0){
-        async("/js/jquery.tagcloud.js",function(){
+        async("/assets/js/jquery.tagcloud.js",function(){
             $.fn.tagcloud.defaults = {
                 //size: {start: 1, end: 1, unit: 'em'},
                 color: {start: '#bbbbee', end: '#0085a1'},
@@ -392,12 +371,6 @@
     ga('send', 'pageview');
 </script>
 
-
-
-
-<!-- Image to hack wechat -->
-<img src="/img/icon_wechat.png" width="0" height="0" />
-<!-- Migrate from head to bottom, no longer block render and still work -->
 
 </body>
 
